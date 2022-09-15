@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>POCKET CALCULATOR</h1><hr>
+        <form name="calculator">
+            <div id="top">
+                <input type="output" name="output" id="outputbox"><br><br>
+            </div>
+            <div id="bottom">
+                <input type="button" value="7" class="numberBtn" onclick="symbol('7')" >
+                <input type="button" value="8" class="numberBtn" onclick="symbol('8')">
+                <input type="button" value="9" class="numberBtn" onclick="symbol('9')">
+                <input type="button" value="+" class="numberBtn" onclick="symbol('+')"><br><br>
+                <input type="button" value="4" class="numberBtn" onclick="symbol('4')">
+                <input type="button" value="5" class="numberBtn" onclick="symbol('5')">
+                <input type="button" value="6" class="numberBtn" onclick="symbol('6')">
+                <input type="button" value="-" class="numberBtn" onclick="symbol('-')"><br><br>
+                <input type="button" value="1" class="numberBtn" onclick="symbol('1')">
+                <input type="button" value="2" class="numberBtn" onclick="symbol('2')">
+                <input type="button" value="3" class="numberBtn" onclick="symbol('3')">
+                <input type="button" value="*" class="numberBtn" onclick="symbol('*')"><br><br>
+                <input type="button" value="0" class="numberBtn" onclick="symbol('0')">
+                <input type="button" value="." class="numberBtn" onclick="symbol('.')">
+                <input type="button" value="/" class="numberBtn" onclick="symbol('/')">
+                <input type="button" value="=" id="EqlBtn" onclick=" equals() ">
+               <br><br> <input type="button" value="clear" class="numberBtn" onclick="calculator.output.value = ''">
+
+                
+            </div>
+
+        </form>
+        
+
+        <script>
+            function symbol(char)
+            {
+                calculator.output.value += char;
+                
+                if(char=='+')
+                {
+                    alert('ADDITION IS BEING PERFORMED');
+                    
+
+                }
+                else if(char=='-')
+                {
+                    alert('SUBTRACTION IS BEING PERFORMED');
+                }
+                else if(char=='*')
+                {
+                    alert('MULTIPLICATION IS BEING PERFORMED');
+                }
+                else if(char=='/')
+                {
+                    alert('DIVISION IS BEING PERFORMED');
+                }
+               
+                
+            }
+            function equals()
+            {
+                
+            var regx = /[+-/*.][+-/*.]+/ ; 
+                var res;
+                if(regx.test(calculator.output.value))
+                {
+                    alert("ERROR!!!!");
+                    res = "Error";
+                }
+                else
+                {
+                     res = eval(calculator.output.value);
+                     if((Math.floor(res)!=res))
+                {
+                    alert('The output is in decimal');
+                }
+                }
+                
+
+                calculator.output.value = res;
+                document.getElementById('outputbox').style.color='white';
+               
+                
+                
+                
+                
+                
+                
+            }
+            
+        </script>
+
+    </body>
+</html>

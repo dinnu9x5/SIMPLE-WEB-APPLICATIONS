@@ -1,0 +1,95 @@
+body{
+    
+    background-image: url(https://us.123rf.com/450wm/karandaev/karandaev1611/karandaev161100434/65841837-office-leather-desk-table-with-calculator-and-pen-top-view-with-copy-space.jpg?ver=6);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+h1{
+    text-align: center;
+    color:skyblue;
+    animation-name: example;
+    animation-duration:10s;
+}
+@keyframes example {
+    from
+    {
+        color:red;
+    }
+    to
+    {
+        color:Blue;
+    }
+    
+}
+#top
+{
+    background-color: rgba(220, 57, 57, 0.862);
+    width:500px;
+    height:50px;
+    border-radius:10px 10px 0px 0px;
+    margin-left:580px;
+    /*box-shadow: 5px 5px 10px;*/
+    
+}
+#outputbox
+{
+    
+    font-size: 30px;
+    padding-right:18px;
+    padding-top:15px;
+    padding-bottom:15px;
+    
+    font-weight: 700;
+    text-align: right;
+    color:black;
+    width: 96%;
+    border: none;
+    background-color: #F8F8F8;
+    background-color: rgb(220, 57, 57);
+    border-radius:10px 10px 0px 0px;
+    
+
+
+}
+
+#bottom
+{
+    background-color: rgb(156, 157, 157);
+    width:500px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-left:580px;
+    border-radius:0px 0px 10px 10px;
+    /*box-shadow: 15px 15px 15px #F2F2F2;*/
+    
+}
+.numberBtn
+{
+    padding:10px;
+    margin-top:20px;
+    border-radius:50%;
+    width:60px;
+    font-size: 20px;
+    background-color: rgb(231, 230, 230);
+    margin-right:15px;
+    
+}
+.numberBtn:active{
+    background-color: pink;
+}
+
+#EqlBtn
+{
+    padding:10px;
+    margin-top:20px;
+    border-radius:50%;
+    width:60px;
+    font-size: 20px;
+    background-color: rgb(241, 123, 123);
+    
+}
+#EqlBtn:active{
+    background-color: rgb(255, 9, 9);
+
+}
