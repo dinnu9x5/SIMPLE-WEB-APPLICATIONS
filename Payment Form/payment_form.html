@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        <form>
+        <h1 class="main_heading">Payment Form</h1>
+        <hr>
+        
+        <h2>User Information</h2>
+        Username: <input type="text" name="username" size="35">
+        <br><br>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="1" > male
+            <input type="radio" name="1" > female
+        </fieldset>
+        <br>
+        Address: <br><textarea name="textarea" rows="10" cols="100"></textarea>
+        <br><br>
+        Email: <input type="email" name="mailid" placeholder="xyz@gmail.com"><br><br>
+        Pincode: <input type="text" name="pincode">
+        <br><br>
+        <h2>Payment Method</h2>
+        Card Type: 
+        <select>
+            <option value="0">Select Card Type</option>
+            <option value="0">Debit Card</option>
+            <option value="0">Credit Card</option>
+        </select><br><br>
+        Card Number: <input type="text" name="card_number" placeholder="1111-2222-3333-4444"><br><br>
+        Expiry Date: <input type="date" name="date"><br><br>
+        CVV: <input type="text" name="cvv" placeholder="123"><br><br>
+        <input type="submit" value="Paytm Karo">
+
+    </form>
+</div>
+
+    </body>
+</html>
